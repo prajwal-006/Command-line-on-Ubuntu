@@ -1,0 +1,23 @@
+mkdir test                         //to create folder in home
+
+cd test                            // to move into the test folder
+
+touch A.txt                        // to create a blank file called "A" without using any text editor
+
+ls                                 // to list all the files inside the folder
+
+for i in {1..2600}
+do                                 // to create 2600 files using for loop , each with a name ranging from M1 to M2600
+mkdir M$i
+done
+
+
+echo "Hi" > A.txt                  // to write text ("Hi") inside the file A
+
+touch B.txt                        // to create a blank file called "B" without using any text editor
+
+echo "UVCE" > B.txt                // to write text ("UVCE") inside the file B
+
+cat A.txt B.txt                    // to concatenate the text of 2 files A and B and display it on the terminal i.e. 
+                                   // Hi
+                                   // UVCE
